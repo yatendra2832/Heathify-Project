@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Healthify</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Adding css with style.css-->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Owl carousel file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body>
+
+<!-- Navbar 1 start -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid  bg-primary ">
+    <a class="navbar-brand" href="/index.html"><img src="/img/logo.jpg.png" alt="" height="50" width="200"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-4 ">
+        <li class="nav-item mx-4 nav1-item">
+          <a class="nav-link fw-bold text-white" href="/index.html">Home</a>
+        </li>
+         <li class="nav-item mx-4 nav1-item">
+          <a class="nav-link fw-bold text-white"  href="/about.html" >About Us</a>
+        </li>
+         <li class="nav-item mx-4 nav1-item">
+          <a class="nav-link fw-bold text-white"  href="/doctors.html">Doctors</a>
+        </li> 
+        <li class="nav-item mx-4 nav1-item">
+          <a class="nav-link fw-bold text-white" href="/patients.html" >Patients</a>
+        </li> 
+        <li class="nav-item mx-4 nav1-item" >
+          <a class="nav-link fw-bold text-white" href="/appointments.html"  >Appointment</a>
+        </li>
+        <li class="nav-item dropdown mx-4"  href="/contactus.html">
+          <a class="nav-link dropdown-toggle custom-white-text" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Contact Us
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/emailus.html">Email Us</a></li>
+            <li><a class="dropdown-item" href="/callus.html"> Call Us</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/whatsapp.html">Whatsapp Us</a></li>
+          </ul>
+        </li>
+        <li class="nav-item mx-4 nav1-item">
+          <a class="nav-link fw-bold text-white" href="/emergency.html">Emergency</a>
+        </li>
+      </ul>
+<!-- Sign up and Login Button form -->
+      <div class="text-end d-flex">
+        <!-- Login button -->
+        <button type="button" class="btn btn-warning me-2" data-bs-toggle="modal" data-bs-target="#loginmodal" >Login</button>
+            <div class="modal fade" id="loginmodal" tabindex="-1" aria-labelledby="loginmodalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="loginmodalLabel">Login </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="email" class="form-label" >Email</label>
+            <input type="email" class="form-control border-primary" id="email">
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label ">Password</label>
+            <input type="password" class="form-control border-primary" id="password">
+          </div>
+           <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+        </form>
+      </div>
+     
+    </div>
+  </div>
+            </div>
+
+        <!--Sign Up button -->
+        <button type="button" class="btn btn-warning me-2" data-bs-toggle="modal" data-bs-target="#signupmodal" >Sign Up</button>
+           <div class="modal fade" id="signupmodal" tabindex="-1" aria-labelledby="signupodalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="signupmodalLabel">Sign Up Now</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="/signup.php" method="post">
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control border-primary" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control border-primary" id="password">
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control border-primary" id="confirmpassword">
+          </div>
+            <div class="modal-footer">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+        </form>
+       
+      </div>
+     
+    </div>
+  </div>
+           </div>  
+      </div>
+<!-- Sign up and login form end -->
+    </div>
+  </div>
+</nav>
+  <!-- Navbar 1 END -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Navbar 2 START -->
+<div class="container-fluid d-flex justify-content-center">
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <a class="navbar-brand fw-bold " href="#"><span>Healthify</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item nav2-item">
+          <a class="nav-link fw-bold mx-4" href="/Navabar2/bloodtest.html">Blood Test</a>
+        </li>
+        <li class="nav-item nav2-item">
+          <a class="nav-link fw-bold mx-4" href="/Navabar2/xray.html">X-Rays & Scans</a>
+        </li>
+        <li class="nav-item nav2-item">
+          <a class="nav-link fw-bold mx-4" href="/Navabar2/geneticTesting.html">Genetic Testing</a>
+        </li>
+        <li class="nav-item nav2-item">
+          <a class="nav-link fw-bold mx-4" href="/Navabar2/doctorconsultation.html">Doctor Consultation</a>
+        </li>
+        <li class="nav-item nav2-item">
+          <a class="nav-link fw-bold mx-4" href="/Navabar2/surgery.html">Surgery</a>
+        </li>
+        <li class="nav-item nav2-item">
+          <a class="nav-link fw-bold mx-4" href="/Navabar2/supplement.html">Supplements</a>
+        </li>
+        <li class="nav-item nav2-item">
+          <a class="nav-link fw-bold mx-4" href="/Navabar2/healthtips.html">Health Tips</a>
+        </li>
+        <li class="nav-item nav2-item">
+          <a class="nav-link fw-bold mx-4" href="/Navabar2/offers.html">Offers</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<!-- Navbar2 END -->
+<h1 class="text-primary fw-bold text-center">Contact Us</h1>
+<div class="container d-flex align-items-center">
+    <form class="w-100" >
+        <div class="form-group my-2">
+            <label for="name" class="my-2">Name:</label>
+            <input type="text" class="form-control" id="name" placeholder="Your Name">
+        </div>
+        <div class="form-group my-2">
+            <label for="email" class="my-2">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Your Email">
+        </div>
+        <div class="form-group my-2">
+            <label for="phone" class="my-2">Phone:</label>
+            <input type="tel" class="form-control" id="phone" placeholder="Your Phone Number">
+        </div>
+        <div class="form-group my-2">
+            <label for="message" class="my-2">Message:</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+        </div>
+        <div class="form-group my-2">
+            <label for="reason" class="my-2">Reason for Contact:</label>
+            <select class="form-control" id="reason">
+                <option value="general">General Inquiry</option>
+                <option value="appointment">Appointment Scheduling</option>
+                <option value="billing">Billing and Insurance</option>
+                <option value="records">Medical Records Request</option>
+                <option value="feedback">Feedback or Suggestions</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-group my-2">
+            <label for="attachments" class="my-2">Attach Files:</label>
+            <input type="file" class="form-control-file" id="attachments">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
