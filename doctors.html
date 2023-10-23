@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Healthify</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Adding css with style.css-->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Owl carousel file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body>
+
+<!-- Navbar 1 start -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid  bg-primary ">
+    <a class="navbar-brand" href="/index.html"><img src="/img/logo.jpg.png" alt="" height="50" width="200"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-4 ">
+        <li class="nav-item mx-4 nav1-item">
+          <a class="nav-link fw-bold text-white" href="/index.html">Home</a>
+        </li>
+         <li class="nav-item mx-4 nav1-item">
+          <a class="nav-link fw-bold text-white"  href="/about.html" >About Us</a>
+        </li>
+         <li class="nav-item mx-4 nav1-item">
+          <a class="nav-link fw-bold text-white"  href="/doctors.html">Doctors</a>
+        </li> 
+        <li class="nav-item mx-4 nav1-item">
+          <a class="nav-link fw-bold text-white" href="/patients.html" >Patients</a>
+        </li> 
+        <li class="nav-item mx-4 nav1-item" >
+          <a class="nav-link fw-bold text-white" href="/appointments.html"  >Appointment</a>
+        </li>
+        <li class="nav-item dropdown mx-4"  href="/contactus.html">
+          <a class="nav-link dropdown-toggle custom-white-text" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Contact Us
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/emailus.html">Email Us</a></li>
+            <li><a class="dropdown-item" href="/callus.html"> Call Us</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/whatsapp.html">Whatsapp Us</a></li>
+          </ul>
+        </li>
+        <li class="nav-item mx-4 nav1-item">
+          <a class="nav-link fw-bold text-white" href="emergency.html">Emergency</a>
+        </li>
+      </ul>
+<!-- Sign up and Login Button form -->
+      <div class="text-end d-flex">
+        <!-- Login button -->
+        <button type="button" class="btn btn-warning me-2" data-bs-toggle="modal" data-bs-target="#loginmodal" >Login</button>
+            <div class="modal fade" id="loginmodal" tabindex="-1" aria-labelledby="loginmodalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="loginmodalLabel">Login </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="email" class="form-label" >Email</label>
+            <input type="email" class="form-control border-primary" id="email">
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label ">Password</label>
+            <input type="password" class="form-control border-primary" id="password">
+          </div>
+           <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+        </form>
+      </div>
+     
+    </div>
+  </div>
+            </div>
+
+        <!--Sign Up button -->
+        <button type="button" class="btn btn-warning me-2" data-bs-toggle="modal" data-bs-target="#signupmodal" >Sign Up</button>
+           <div class="modal fade" id="signupmodal" tabindex="-1" aria-labelledby="signupodalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="signupmodalLabel">Sign Up Now</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="/signup.php" method="post">
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control border-primary" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control border-primary" id="password">
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control border-primary" id="confirmpassword">
+          </div>
+            <div class="modal-footer">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+        </form>
+       
+      </div>
+     
+    </div>
+  </div>
+           </div>  
+      </div>
+<!-- Sign up and login form end -->
+    </div>
+  </div>
+</nav>
+  <!-- Navbar 1 END -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Navbar 2 START -->
+<div class="container-fluid d-flex justify-content-center">
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <a class="navbar-brand fw-bold " href="#"><span>Healthify</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item nav2-item">
+          <a class="nav-link fw-bold mx-4" href="/Navabar2/bloodtest.html">Blood Test</a>
+        </li>
+        <li class="nav-item nav2-item">
+          <a class="nav-link fw-bold mx-4" href="/Navabar2/xray.html">X-Rays & Scans</a>
+        </li>
+        <li class="nav-item nav2-item">
+          <a class="nav-link fw-bold mx-4" href="/Navabar2/geneticTesting.html">Genetic Testing</a>
+        </li>
+        <li class="nav-item nav2-item">
+          <a class="nav-link fw-bold mx-4" href="/Navabar2/doctorconsultation.html">Doctor Consultation</a>
+        </li>
+        <li class="nav-item nav2-item">
+          <a class="nav-link fw-bold mx-4" href="/Navabar2/surgery.html">Surgery</a>
+        </li>
+        <li class="nav-item nav2-item">
+          <a class="nav-link fw-bold mx-4" href="/Navabar2/supplement.html">Supplements</a>
+        </li>
+        <li class="nav-item nav2-item">
+          <a class="nav-link fw-bold mx-4" href="/Navabar2/healthtips.html">Health Tips</a>
+        </li>
+        <li class="nav-item nav2-item">
+          <a class="nav-link fw-bold mx-4" href="/Navabar2/offers.html">Offers</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<!-- Navbar2 END -->
+<h1 class="text-center my-2">Our <span class="text-primary fw-bold">Doctors</span></h1>
+<!-- Doctors Profile -->
+<div class="container mt-5 border border-4 rounded-4" style="box-shadow: -2px -2px grey;">
+  <div class="row d-flex align-items-center">
+ <div class="col-md-4 ">
+          <img src="/img/team/doctor2.jpeg" alt="Doctor's Photo" class="img-fluid rounded-5 ">
+      </div>
+      <div class="col-md-8">
+        <h2>Dr. John Doe</h2>
+        <p>Specialty: Cardiology</p>
+        <p>Education: MD, Cardiology, Medical School XYZ</p>
+        <p>Years of Experience: 15+</p>
+        <p>Awards and Recognitions: Board-certified Cardiologist</p>
+        <p>Contact: <a href="mailto:dr.johndoe@example.com">dr.johndoe@example.com</a></p>
+        <p>Phone: +1 (555) 123-4567</p>
+        <p>Office Location: 123 Main Street, Suite 101, City, State ZIP</p>
+        <p>Office Hours: Mon-Fri: 9:00 AM - 5:00 PM</p>
+        <p>Accepts Insurance: Yes</p>
+        <p>Payment Options: Cash, Credit Cards, Insurance</p>
+        <p>Languages Spoken: English, Spanish</p>
+    </div>
+     
+  </div>
+</div>
+<!-- Doctor Profile 2 -->
+<div class="container mt-5 border border-4 rounded-4" style="box-shadow: -2px -2px blue;">
+  <div class="row d-flex align-items-center">
+      <div class="col-md-4">
+          <img src="/img/Doctorspage/doctor2.png" alt="Doctor's Photo" class="img-fluid rounded-circle">
+      </div>
+      <div class="col-md-8">
+          <h2>Dr. Sarah Smith</h2>
+          <p>Specialty: Pediatrics</p>
+          <p>Education: MD, Pediatrics, Medical School ABC</p>
+          <p>Years of Experience: 10+</p>
+          <p>Contact: <a href="mailto:dr.sarahsmith@example.com">dr.sarahsmith@example.com</a></p>
+          <p>Phone: +1 (555) 987-6543</p>
+          <p>Office Location: 456 Oak Avenue, Suite 202, City, State ZIP</p>
+          <p>Office Hours: Mon-Fri: 8:30 AM - 4:30 PM</p>
+          <p>Accepts Insurance: Yes</p>
+          <p>Payment Options: Cash, Credit Cards, Insurance</p>
+          <p>Languages Spoken: English, French</p>
+      </div>
+  </div>
+</div>
+
+<!-- Doctor Profile 3 -->
+<div class="container mt-5 border border-4 rounded-4" style="box-shadow: -2px -2px grey;">
+  <div class="row d-flex align-items-center">
+      <div class="col-md-4">
+          <img src="/img/Doctorspage/doctor3.png" alt="Doctor's Photo" class="img-fluid rounded-circle">
+      </div>
+      <div class="col-md-8">
+          <h2>Dr. David Johnson</h2>
+          <p>Specialty: Orthopedics</p>
+          <p>Education: MD, Orthopedics, Medical School DEF</p>
+          <p>Years of Experience: 20+</p>
+          <p>Contact: <a href="mailto:dr.davidjohnson@example.com">dr.davidjohnson@example.com</a></p>
+          <p>Phone: +1 (555) 321-7890</p>
+          <p>Office Location: 789 Elm Street, Suite 303, City, State ZIP</p>
+          <p>Office Hours: Mon-Fri: 8:00 AM - 6:00 PM</p>
+          <p>Accepts Insurance: Yes</p>
+          <p>Payment Options: Cash, Credit Cards, Insurance</p>
+          <p>Languages Spoken: English, Spanish</p>
+      </div>
+  </div>
+</div>
+
+<!-- Doctor Profile 4 -->
+<div class="container mt-5 border border-4 rounded-4" style="box-shadow: -2px -2px grey;">
+  <div class="row">
+      <div class="col-md-4 d-flex align-items-center">
+          <img src="img/Doctorspage/doctor4.png" alt="Doctor's Photo" class="img-fluid rounded-circle">
+      </div>
+      <div class="col-md-8">
+          <h2>Dr. Emily Anderson</h2>
+          <p>Specialty: Dermatology</p>
+          <p>Education: MD, Dermatology, Medical School GHI</p>
+          <p>Years of Experience: 12+</p>
+          <p>Contact: <a href="mailto:dr.emilyanderson@example.com">dr.emilyanderson@example.com</a></p>
+          <p>Phone: +1 (555) 456-7890</p>
+          <p>Office Location: 101 Pine Street, Suite 404, City, State ZIP</p>
+          <p>Office Hours: Mon-Fri: 9:30 AM - 5:30 PM</p>
+          <p>Accepts Insurance: Yes</p>
+          <p>Payment Options: Cash, Credit Cards, Insurance</p>
+          <p>Languages Spoken: English</p>
+      </div>
+  </div>
+</div>
+
+<!-- Doctor Profile 5 -->
+<div class="container mt-5 border border-4 rounded-4" style="box-shadow: -2px -2px grey;">
+  <div class="row d-flex align-items-center ">
+      <div class="col-md-4 d-flex align-items-center">
+          <img src="img/Doctorspage/doctor5.png" alt="Doctor's Photo" class="img-fluid rounded-circle">
+      </div>
+      <div class="col-md-8 ">
+          <h2>Dr. Michael Brown</h2>
+          <p>Specialty: Neurology</p>
+          <p>Education: MD, Neurology, Medical School JKL</p>
+          <p>Years of Experience: 18+</p>
+          <p>Contact: <a href="mailto:dr.michaelbrown@example.com">dr.michaelbrown@example.com</a></p>
+          <p>Phone: +1 (555) 789-1234</p>
+          <p>Office Location: 222 Maple Lane, Suite 505, City, State ZIP</p>
+          <p>Office Hours: Mon-Fri: 8:00 AM - 4:00 PM</p>
+          <p>Accepts Insurance: Yes</p>
+          <p>Payment Options: Cash, Credit Cards, Insurance</p>
+          <p>Languages Spoken: English, Mandarin</p>
+      </div>
+  </div>
+</div>
+
+<!-- Footer start -->
+<footer class="container py-4 my-1">
+  <div class="row py-5">
+    <div class="col-12 col-md">
+     <h2>Healthify</h2>
+      <small class="d-block mb-3 text-body-secondary">© 2017–2023</small>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Our Labs</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary text-decoration-none" href="#">Clinical Laboratories</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">Pathology Laboratories</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">Microbiology Laboratories</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">Hematology Laboratories</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">Biochemistry Laboratories</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">Genetics Laboratories</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Tests</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary text-decoration-none" href="#">CT Scan</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">MRI</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">Ultrasound</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">ECG Test</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">more...</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Locations</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary text-decoration-none" href="#">Delhi</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">Ghaziabad</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">Noida</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">Gurgaon</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>About</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<!-- Footer End -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
