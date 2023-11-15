@@ -48,3 +48,9 @@
     transition: color 0.3s ease;
   }
   
+  @media (max-width:900px){
+    .main-logo{
+      /* display: none; */
+      width:100px;
+    }
+  }
