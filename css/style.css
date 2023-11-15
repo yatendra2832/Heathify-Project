@@ -54,3 +54,11 @@
       width:100px;
     }
   }
+
+  .hr-line{
+    width:10%;
+    text-align: center;
+    color:rgb(10, 137, 248);
+    margin:auto auto;
+    border: 1px solid rgb(53, 43, 255);
+  }
