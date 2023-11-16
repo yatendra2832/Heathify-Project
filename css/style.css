@@ -62,3 +62,25 @@
     margin:auto auto;
     border: 1px solid rgb(53, 43, 255);
   }
+.form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  #callnow,.getcall{
+    
+    text-decoration: none;
+    border:0;
+    outline: 10;
+    box-shadow: 1px 1px 1px 1px grey;
+    padding:5px 100px;
+
+  }
+ .getcall{
+  padding:5px 50px;
+  color:white;
+  font-weight: bold;
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+ }
+
+ 
