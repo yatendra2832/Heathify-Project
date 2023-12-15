@@ -1,0 +1,7 @@
+.userCard:hover {
+  cursor: pointer;
+}
+
+.userCard > h3:hover {
+  text-decoration: underline;
+}
